@@ -1,0 +1,68 @@
+.w-14 {
+  width: 3.6rem;
+}
+
+.h-14 {
+  height: 3.6rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.animate-shapes-9tptoo {
+  animation: shapes-9tptoo 1.5s infinite linear;
+}
+
+.before-after {
+  content: "";
+  grid-area: 1/1;
+  background-color: #0bba71;
+  animation: shapes-q0lle4 1.5s infinite linear,
+    shapes-c5rge7 1.5s infinite linear;
+}
+
+.after-reverse {
+  --s: -1;
+  animation-direction: reverse;
+}
+
+@keyframes shapes-9tptoo {
+  0%,
+  9%,
+  91%,
+  100% {
+    background-color: #0bba71;
+  }
+
+  10%,
+  90% {
+    background-color: transparent;
+  }
+}
+
+@keyframes shapes-q0lle4 {
+  0%,
+  33% {
+    clip-path: polygon(0 0, 50% 100%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  66%,
+  100% {
+    clip-path: polygon(50% 0, 50% 100%, 50% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes shapes-c5rge7 {
+  0%,
+  10%,
+  90%,
+  100% {
+    transform: scale(var(--s, 1)) translateY(0);
+  }
+
+  33%,
+  66% {
+    transform: scale(var(--s, 1)) translateY(50%);
+  }
+}
