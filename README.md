@@ -26,7 +26,10 @@ Make sure you have the following prerequisites installed on your system:
 
 
 After the installation is complete, start the development server with:
+```bash
 npm run dev
+```
+
 Open your web browser and access the application at http://localhost:5137.
 
 
